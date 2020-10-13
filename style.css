@@ -3,6 +3,7 @@
 :root{
     --gray:  #5f6366;
     --white: #fff;
+    --black: #000;
 }
 
 
@@ -52,7 +53,53 @@ ul, ol{
 /* Aside 
 -----------*/
 
+
+aside{
+    background: var(--black);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.2);
+    width: 100%;
+    padding: 2rem;
+}
+
+aside a:link, aside a:visited{
+    color : var(--white);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.25rem;
+}
+
+.aside-header{
+    margin-top: 2rem;
+    font-size: 1.125rem;
+    z-index: 5;
+    color: var(--white);
+}
+
+.aside-header > h1 > a{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: .5rem 0;
+}
+
+.icon{
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+.gray-text{
+    color : var(--gray);
+    font-size: 1.5rem;
+}
+
+
 /* Menu */
+.copyright{
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
 /* Menu Toggle*/
 
 button{
@@ -84,3 +131,5 @@ nav{
     max-height: 8000vh;
     visibility: visible;
 }
+
+
