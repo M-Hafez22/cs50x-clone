@@ -1,3 +1,10 @@
+
+
+// Add Aside Content
+// ------------------
+
+
+// Elements
 const zoom = document.querySelector('#zoom');
 const weeks = document.querySelector("#weeks");
 const tracks = document.querySelector("#tracks");
@@ -67,7 +74,7 @@ function generateMenuItems(arr, parent){
 }
 
 
-
+// Elements Data
 const weeksList = [ 'Scratch 😺', 'C','Arrays','Algorithms','Memory','Data Structures','Python','SQL','Information'];
 const zoomList = [
     {name: 'Zoom Meetings', link: 'https://cs50.harvard.edu/x/2020/zoom/'}
@@ -131,7 +138,7 @@ const statusList = [
     {name: 'Status Page',link: 'https://cs50.statuspage.io/'}
 ];
 
-
+// Generate Content
 generateMenuItems(zoomList, zoom)
 generateweeksList(weeksList);
 generateMenuItems(tracksList, tracks);
@@ -141,3 +148,17 @@ generateMenuItems(canalsList, canals);
 generateMenuItems(toolsList, tools);
 generateMenuItems(statusList, statusPages);
 generateMenuItems(communitiesList, communities);
+
+
+// Open & Close the Menu
+// ----------------------
+const menuBTN = document.querySelector('#menuBTN');
+const menu = document.querySelector('#menu');
+
+function toggleMenu() {
+    menu.classList.toggle('open');
+    menuBTN.classList.toggle('BTNopen');
+}
+
+menuBTN.addEventListener('click', toggleMenu);
+
