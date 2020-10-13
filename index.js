@@ -29,7 +29,7 @@ function generateweeksList(arr){
         // Create a list item Link
         let weekLink = document.createElement("a");
         weekLink.textContent = `Week ${i}`
-        weekLink.setAttribute('href', `https://cs50.harvard.edu/x/2020/weeks/${i}`)
+        weekLink.setAttribute('href', `/weeks/week${i}.html`)
  
         // Create a list item Name
         let weekName = document.createElement("span");

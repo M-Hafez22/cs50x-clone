@@ -185,8 +185,6 @@ main hr{
 
 .level-one, .level-two{
     margin-left: 4rem;
-<<<<<<< HEAD
-=======
 }
 
 
@@ -224,6 +222,4 @@ main hr{
         visibility: visible; 
         overflow: visible;
     }
-
->>>>>>> b
 }
