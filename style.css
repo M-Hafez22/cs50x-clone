@@ -5,6 +5,7 @@
     --white: #fff;
     --black: #000;
     --light_gray: #e9ecef;
+    --red:#a51c30;
 }
 
 
@@ -184,4 +185,45 @@ main hr{
 
 .level-one, .level-two{
     margin-left: 4rem;
+<<<<<<< HEAD
+=======
+}
+
+
+
+/* Desktop version
+---------------- */
+
+@media only screen and (min-width: 1000px){
+    body{
+        flex-direction: row-reverse;
+        max-height: 120rem;
+    }
+
+    /* remove extra scrollbar*/
+    main::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    aside{
+        width: 500px;
+    }
+
+    /* separate scrollbars */
+    main, aside {
+        max-height: 120rem;
+        overflow: auto;
+    }
+    
+    #menuBTN{
+        display: none;
+    }
+
+    nav{
+        max-height: 100%;
+        visibility: visible; 
+        overflow: visible;
+    }
+
+>>>>>>> b
 }
