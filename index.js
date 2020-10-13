@@ -20,6 +20,8 @@ const list_items = document.querySelectorAll('#instruction  li');
 const week_files = document.querySelectorAll('#week-files li > a');
 
 
+
+
 // Generte weeks items
 function generateweeksList(arr){
     for (let i = 0; i < arr.length; i++){
@@ -205,3 +207,18 @@ function addDot(el, id){
 
 addDot(list_items, 'home_dots');
 addDot(week_files, 'week_dots');
+
+
+// Add toggle buttons for lists
+// -----------------------------
+
+const toggleBTN = document.querySelectorAll('.toggleBTN');
+
+function toggleList(el){
+    console.log(el.nextElementSibling);
+    el.nextElementSibling.classList.toggle('openList')
+}
+
+for (let i= 0; i < toggleBTN.length; i++){
+    toggleBTN[i].addEventListener('click',  function() {toggleList(toggleBTN[i])})
+}
