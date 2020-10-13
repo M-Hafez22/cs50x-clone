@@ -34,3 +34,13 @@ hr{
 img{
     max-width: 100%;
 }
+
+iframe{
+    width: 100%;
+    height: 584px;
+    padding: 1rem;
+}
+
+ul, ol{
+    list-style-type: none;
+}
