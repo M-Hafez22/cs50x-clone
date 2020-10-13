@@ -190,20 +190,18 @@ menuBTN.addEventListener('click', toggleMenu);
 
 // Generate dots
 // --------------
-function addDot(el){
+function addDot(el, id){
     
     for (let i = 0; i < el.length; i++){
         // Create a Dot
         let dot = document.createElement('i');
         dot.classList.add('fas', 'fa-circle');
-        dot.setAttribute("id", "dot");
+        dot.setAttribute("id", id);
 
         // Add a Dot to li
         el[i].parentNode.insertBefore(dot, el[i]);
     }
 }
 
-
-console.log(week_files.length);
-addDot(list_items);
-addDot(week_files);
+addDot(list_items, 'home_dots');
+addDot(week_files, 'week_dots');
