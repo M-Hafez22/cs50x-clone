@@ -29,12 +29,22 @@ function generateweeksList(arr){
  
         // Create a list item Name
         let weekName = document.createElement("span");
-        weekName.textContent =" " + arr[i];
+        weekName.textContent =" " + arr[i].name;
         weekName.className = "gray-text";
 
         // Add link & name to the Item
         week.appendChild(weekLink);
         week.appendChild(weekName);
+
+        if (arr[i].additional){
+            // Create Additional 
+            let additional = document.createElement("span");
+            additional.textContent =" " + arr[i].additional;
+            additional.className = "icon";
+            // Add Additional to the item
+            week.appendChild(additional);
+        }
+
 
         weeks.appendChild(week);
     }
@@ -75,7 +85,18 @@ function generateMenuItems(arr, parent){
 
 
 // Elements Data
-const weeksList = [ 'Scratch 😺', 'C','Arrays','Algorithms','Memory','Data Structures','Python','SQL','Information'];
+const weeksList = [
+    {name : 'Scratch ', additional : '😺'},
+    {name :  'C'},
+    {name : 'Arrays'},
+    {name : 'Algorithms'},
+    {name : 'Memory'},
+    {name : 'Data Structures'},
+    {name : 'Python'},
+    {name : 'SQL'},
+    {name : 'Information'}
+];
+
 const zoomList = [
     {name: 'Zoom Meetings', link: 'https://cs50.harvard.edu/x/2020/zoom/'}
 ];
