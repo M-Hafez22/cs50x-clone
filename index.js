@@ -15,6 +15,10 @@ const tools = document.querySelector('#tools');
 const communities = document.querySelector('#communities');
 const statusPages = document.querySelector('#statusPages');
 
+const list = document.getElementById('instruction');
+const list_items = document.querySelectorAll('#instruction  li');
+
+
 // Generte weeks items
 function generateweeksList(arr){
     for (let i = 0; i < arr.length; i++){
@@ -183,3 +187,19 @@ function toggleMenu() {
 
 menuBTN.addEventListener('click', toggleMenu);
 
+// Generate dots
+// --------------
+function addDot(){
+    
+    
+    for (let i = 0; i < list_items.length; i++){
+        // Create a Dot
+        let dot = document.createElement('i');
+        dot.classList.add('fas', 'fa-circle');
+        dot.setAttribute("id", "dot");
+
+        // Add a Dot to li
+        list_items[i].parentNode.insertBefore(dot, list_items[i]);
+    }
+}
+addDot();

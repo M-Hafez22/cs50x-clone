@@ -5,6 +5,7 @@
     --white: #fff;
     --black: #000;
     --light_gray: #e9ecef;
+    --red:#a51c30;
 }
 
 
@@ -169,3 +170,19 @@ main hr{
     padding-left: 1.25rem;
 }
 
+/*  instructions  */
+
+
+.instructions a:link, .instructions a:visited{
+    color: var(--red);
+}
+
+#dot{
+    transform: translate(-1.5rem, 1.8rem);
+    cursor: pointer;
+    font-size: 40%;
+}
+
+.level-one, .level-two{
+    margin-left: 4rem;
+}
