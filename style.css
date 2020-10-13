@@ -2,6 +2,7 @@
 
 :root{
     --gray:  #5f6366;
+    --white: #fff;
 }
 
 
@@ -43,4 +44,43 @@ iframe{
 
 ul, ol{
     list-style-type: none;
+}
+
+
+/* Containers */
+
+/* Aside 
+-----------*/
+
+/* Menu */
+/* Menu Toggle*/
+
+button{
+    color: var(--white);
+    background: #000;
+    border: 1px solid var(--white);
+    padding: 0.5rem 0.75rem;
+    margin: 1.5rem 0;
+    border-radius: 0.2rem;
+    transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+    outline: 0;
+}
+
+.BTNopen{
+    color: #000;
+    background: var(--white);
+    border: 1px solid #000;
+}
+
+nav{
+    transition: max-height 400ms ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+    z-index: -1;
+}
+
+.open{
+    max-height: 8000vh;
+    visibility: visible;
 }
