@@ -215,7 +215,8 @@ addDot(week_files, 'week_dots');
 const toggleBTN = document.querySelectorAll('.toggleBTN');
 
 function toggleList(el){
-    console.log(el.nextElementSibling);
+    el.firstElementChild.classList.toggle('fa-plus-square')
+    el.firstElementChild.classList.toggle('fa-minus-square')
     el.nextElementSibling.classList.toggle('openList')
 }
 
