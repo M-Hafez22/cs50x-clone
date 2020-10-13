@@ -17,6 +17,7 @@ const statusPages = document.querySelector('#statusPages');
 
 const list = document.getElementById('instruction');
 const list_items = document.querySelectorAll('#instruction  li');
+const week_files = document.querySelectorAll('#week-files li > a');
 
 
 // Generte weeks items
@@ -189,17 +190,20 @@ menuBTN.addEventListener('click', toggleMenu);
 
 // Generate dots
 // --------------
-function addDot(){
+function addDot(el){
     
-    
-    for (let i = 0; i < list_items.length; i++){
+    for (let i = 0; i < el.length; i++){
         // Create a Dot
         let dot = document.createElement('i');
         dot.classList.add('fas', 'fa-circle');
         dot.setAttribute("id", "dot");
 
         // Add a Dot to li
-        list_items[i].parentNode.insertBefore(dot, list_items[i]);
+        el[i].parentNode.insertBefore(dot, el[i]);
     }
 }
-addDot();
+
+
+console.log(week_files.length);
+addDot(list_items);
+addDot(week_files);

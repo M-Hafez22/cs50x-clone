@@ -173,7 +173,8 @@ main hr{
 /*  instructions  */
 
 
-.instructions a:link, .instructions a:visited{
+.instructions a:link, .instructions a:visited,
+#week-files a:link, #week-files a:visited{
     color: var(--red);
 }
 
@@ -183,7 +184,7 @@ main hr{
     font-size: 40%;
 }
 
-.level-one, .level-two{
+.level-one, .level-two, .level-three{
     margin-left: 4rem;
 }
 
