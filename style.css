@@ -186,7 +186,7 @@ main hr{
 
 
 
-.level-one, .level-two, .level-three{
+.level-one, .level-two, .level-three, .level-four{
     margin-left: 4rem;
 }
 
@@ -229,6 +229,16 @@ main hr{
 
 
 /* Weeks*/
+#week-files{
+    margin-left: 2rem;
+}
+
+#week_dots{
+    transform: translate(-0.75rem, -0.25rem);
+    cursor: pointer;
+    font-size: 40%;
+}
+
 
 #week-files button{
     background: var(--white);
@@ -241,32 +251,32 @@ main hr{
     transition:none;
     box-shadow: none;
     outline: 0;
+    display: flex;
+    align-content: center;
+    transform: translateX(-.85rem);
 }
 
-
-#week_dots{
-    transform: translate(-0.75rem, -0.25rem);
-    cursor: pointer;
-    font-size: 40%;
+button > h2{
+    margin-left: .75rem;
 }
 
 .far{
-    transform: translate(-3.5rem, 1.75rem);
+    transform: translateY(0.35rem);
     cursor: pointer;
     font-size: 80%;
 }
 
 
-h2, h3{
-    font-size: 1.5rem;
+#week-files h2, #week-files h3{
+    font-size: 1.35rem;
 }
 
 
+
+/* toggle lists*/
 .toggleList{
     display: none;
 }
-
-
 
 .openList{
     display: block;
