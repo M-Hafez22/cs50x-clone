@@ -6,11 +6,82 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cs50.harvard.edu/x/2020/favicon.ico?1601483399" rel="icon">
     <link rel="stylesheet" href="/style.css">
-    <title>CS50x</title>
+    <link rel="stylesheet" href="/weeks.css">
+    <title>Week 1 - CS50x</title>
 </head>
 <body>
-    <main></main>
+    <main>
+        <!-- Week name -->
+        <h2><a href="#header" class="week-header">Week 1</a></h2>
+        <hr>
+
+        <!-- Youtube video  -->
+        <iframe 
+            src="https://www.youtube.com/embed/e9Eds2Rc_x8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <!-- Week files  -->
+        <div id="week-files">
+            <ol  class="level-one"> 
+                <li><!-- Lecture -->
+                    <button class="toggleBTN"><i class="far fa-minus-square"></i><h2>Lecture</h2></button>
+                    <ul class="toggleList openList level-two">
+                       <!-- Audio -->
+                        <li><a href="https://cdn.cs50.net/2019/fall/lectures/1/lecture1.mp3.download">Audio</a></li> 
+                        <!-- Notes  -->
+                       <li><a href="https://cs50.harvard.edu/x/2020/notes/1/">Notes</a></li>
+                       <!-- Slides  -->
+                       <li>
+                           <button class="toggleBTN"><i class="far fa-plus-square"></i><h2>Slides</h2></button>
+                           <ul class="toggleList level-three"> 
+                               <li><a href="https://docs.google.com/presentation/d/191XW0DHWlW6WmAhYuFUYnZKUlDx0N4u4Fp81AeW-uNs/edit?usp=sharing">Google Slide</a></li>
+                               <li><a href="https://cdn.cs50.net/2019/fall/lectures/1/lecture1.pdf">PDF</a></li>
+                           </ul>
+                       </li>
+                       <!-- Source Code -->
+                        <li>
+                            <button class="toggleBTN"><i class="far fa-plus-square"></i><h2>Source Code</h2></button>
+                            <ul class="toggleList level-three"> 
+                                <li><a href="https://cdn.cs50.net/2019/fall/lectures/1/src1/">Index</a></li>
+                                <li><a href="https://cdn.cs50.net/2019/fall/lectures/1/src1.pdf">PDF</a></li>
+                                <li><a href="https://cdn.cs50.net/2019/fall/lectures/1/src1.zip">Zip</a></li>
+                            </ul>
+                        </li>
+                       <li>
+                           <button class="toggleBTN"><i class="far fa-plus-square"></i><h2>Video</h2></button>
+                           <ul class="toggleList level-three"> 
+                                <li><a href="https://video.cs50.io/e9Eds2Rc_x8?screen=ClQXfUurzgU">CS50 Video player</a></li>
+                                <li>
+                                    <button class="toggleBTN"><i class="far fa-plus-square"></i><h2>MP4</h2></button>
+                                    <ul class="toggleList level-four">
+                                        <li><a href="https://cdn.cs50.net/2019/fall/lectures/1/lecture1-360p.mp4.download">360p</a></li>
+                                        <li><a href="https://cdn.cs50.net/2019/fall/lectures/1/lecture1-720p.mp4.download">720p</a></li>
+                                        <li><a href="https://cdn.cs50.net/2019/fall/lectures/1/lecture1-1080p.mp4.download">1080p</a></li>
+                                        <li><a href="https://cdn.cs50.net/2019/fall/lectures/1/lecture1-4k.mp4.download">4K</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://youtu.be/e9Eds2Rc_x8">Youtube</a></li>
+                           </ul>
+                       </li>
+                    </ul>
+                </li>
+                <li><!-- Shorts -->
+                    <button class="toggleBTN"><i class="far fa-minus-square"></i><h2>Shorts</h2></button>
+                    <ul class="toggleList openList level-two">
+                        <li><a href="https://www.youtube.com/embed/q6K8KMqt8wQ">Dara Types</a></li>
+                        <li><a href="https://www.youtube.com/embed/7apBtlEkJzk?rel=0">Operators</a></li>
+                        <li><a href="https://www.youtube.com/embed/FqUeHzvci10?rel=0">Conditional Statements</a></li>
+                        <li><a href="https://www.youtube.com/embed/QOvo-xFL9II?rel=0">Loops</a></li>
+                        <li><a href="https://www.youtube.com/embed/lnYKOnz9ln8?rel=0">Command Line</a></li> 
+                    </ul>
+                </li>
+                
+                <li><a href="https://cs50.harvard.edu/x/2020/psets/1/">Problem Set 0</a></li>
+            </ol>
+        </div>
+
+    </main>
     <aside>
         <header class="aside-header">
             <h1><a href="/index.html">This is CS50x HomePage-Clone</a></h1>
@@ -44,7 +115,7 @@
             <ul id="tools"></ul>
             <ul id="statusPages"></ul>
             <ul id="communities"></ul>
-            <a   href="https://cs50.harvardshop.com/"><img src="./GGMdcKt.png" alt="Harvard Shop" style="background-color: black;"></a>
+            <a   href="https://cs50.harvardshop.com/"><img src="/GGMdcKt.png" alt="Harvard Shop" style="background-color: black;"></a>
             <hr>
             <p class="copyright"  id="license"> <i class="fab fa-creative-commons mr-1"></i><a href="https://cs50.harvard.edu/x/2020/license/">License</a></p>
         </nav>
