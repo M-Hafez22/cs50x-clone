@@ -68,7 +68,7 @@ button > h2{
 ---------------- */
 @media only screen and (min-width: 1000px){
     body{
-        max-height: 120rem;
+        max-height: 80rem;
     }
 
     /* remove extra scrollbar*/
@@ -78,7 +78,7 @@ button > h2{
 
     /* separate scrollbars */
     main, aside {
-        max-height: 70rem;
+        max-height: 80rem;
         overflow: auto;
     }
 
