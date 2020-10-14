@@ -1,4 +1,15 @@
 /* Weeks*/
+
+main{
+    margin-top: 2rem;
+}
+
+.week-header, .week-header:hover {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000;
+}
+
 #week-files{
     margin-left: 2rem;
 }
