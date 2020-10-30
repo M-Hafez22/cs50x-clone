@@ -15,6 +15,7 @@ const tools = document.querySelector('#tools');
 const communities = document.querySelector('#communities');
 const statusPages = document.querySelector('#statusPages');
 
+// Week file list
 const list = document.getElementById('instruction');
 const list_items = document.querySelectorAll('#instruction  li');
 const week_files = document.querySelectorAll('#week-files li > a');

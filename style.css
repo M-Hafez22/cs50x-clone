@@ -63,6 +63,7 @@ aside{
     padding: 2rem;
 }
 
+
 aside a:link, aside a:visited{
     color : var(--white);
     font-size: 1.5rem;
@@ -172,7 +173,6 @@ main hr{
 
 /*  instructions  */
 
-
 .instructions a:link, .instructions a:visited,
 #week-files a:link, #week-files a:visited{
     color: var(--red);
@@ -183,8 +183,6 @@ main hr{
     cursor: pointer;
     font-size: 40%;
 }
-
-
 
 .level-one, .level-two, .level-three, .level-four{
     margin-left: 4rem;
