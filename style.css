@@ -41,8 +41,9 @@ img{
 
 iframe{
     width: 100%;
-    height: 584px;
-    padding: 1rem;
+    /* height: 584px; */
+    /* padding: 1rem; */
+    aspect-ratio: 16 / 9;
 }
 
 ul, ol{
@@ -52,7 +53,7 @@ ul, ol{
 
 /* Containers */
 
-/* Aside 
+/* Aside
 -----------*/
 
 
@@ -136,7 +137,7 @@ nav{
 }
 
 
-/* Main 
+/* Main
 ---------*/
 
 main {
@@ -213,16 +214,14 @@ main hr{
         max-height: 120rem;
         overflow: auto;
     }
-    
+
     #menuBTN{
         display: none;
     }
 
     nav{
         max-height: 100%;
-        visibility: visible; 
+        visibility: visible;
         overflow: visible;
     }
 }
-
-
