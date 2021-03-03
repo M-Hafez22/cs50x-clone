@@ -26,15 +26,15 @@ const week_files = document.querySelectorAll('#week-files li > a');
 // Generte weeks items
 function generateweeksList(arr){
     for (let i = 0; i < arr.length; i++){
-                
+
         // Create a list item
         let week = document.createElement("li");
-        
+
         // Create a list item Link
         let weekLink = document.createElement("a");
         weekLink.textContent = `Week ${i}`
-        weekLink.setAttribute('href', `/weeks/week${i}.html`)
- 
+        weekLink.setAttribute('href', `./weeks/week${i}.html`)
+
         // Create a list item Name
         let weekName = document.createElement("span");
         weekName.textContent =" " + arr[i].name;
@@ -45,7 +45,7 @@ function generateweeksList(arr){
         week.appendChild(weekName);
 
         if (arr[i].additional){
-            // Create Additional 
+            // Create Additional
             let additional = document.createElement("span");
             additional.textContent =" " + arr[i].additional;
             additional.className = "icon";
@@ -62,7 +62,7 @@ function generateweeksList(arr){
 // generate list  Items
 function generateMenuItems(arr, parent){
 
-    for ( let i = 0; i < arr.length; i++){                
+    for ( let i = 0; i < arr.length; i++){
         // Create a list item
         let item = document.createElement("li");
 
@@ -70,14 +70,14 @@ function generateMenuItems(arr, parent){
         let itemLink = document.createElement("a");
         itemLink.textContent = `${arr[i].name}`;
         itemLink.setAttribute('href', arr[i].link);
-        
+
 
         // Add item to list
         item.appendChild(itemLink);
 
-        // Additional 
+        // Additional
         if (arr[i].additional){
-            // Create Additional 
+            // Create Additional
             let additional = document.createElement("span");
             additional.textContent =" " + arr[i].additional;
             additional.className = "gray-text";
@@ -194,7 +194,7 @@ menuBTN.addEventListener('click', toggleMenu);
 // Generate dots
 // --------------
 function addDot(el, id){
-    
+
     for (let i = 0; i < el.length; i++){
         // Create a Dot
         let dot = document.createElement('i');
