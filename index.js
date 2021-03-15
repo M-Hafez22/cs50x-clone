@@ -205,18 +205,20 @@ function toggleMenu() {
 
 menuBTN.addEventListener('click', toggleMenu);
 
-// Generate dots
-// --------------
-function addDot(el, id){
+/**
+ * Adds a dot to the left of a list item
+ * @param {NodeList} unorderdList  list of targeted items 
+ * @param {string} styleClass class name for the targeted items
+ */
+function addDot(unorderdList, styleClass){
 
-    for (let i = 0; i < el.length; i++){
+    for (let i = 0; i < unorderdList.length; i++){
         // Create a Dot
         let dot = document.createElement('i');
-        dot.classList.add('fas', 'fa-circle');
-        dot.setAttribute("id", id);
+        dot.classList.add('fas', 'fa-circle', styleClass);
 
         // Add a Dot to li
-        el[i].parentNode.insertBefore(dot, el[i]);
+        unorderdList[i].parentNode.insertBefore(dot, unorderdList[i]);
     }
 }
 

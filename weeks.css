@@ -17,7 +17,7 @@ main{
 }
 
 /*Link item with dot*/
-#week_dots{
+.week_dots{
     transform: translate(-0.75rem, -0.25rem);
     cursor: pointer;
     font-size: 40%;
