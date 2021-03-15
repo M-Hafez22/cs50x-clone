@@ -23,7 +23,12 @@ const week_files = document.querySelectorAll('#week-files li > a');
 
 
 
-// Generte weeks items
+/**
+ * Generates a list of the weeks' links
+ * 
+ * @param {array} arr a list contains objects holding the weeks' info
+ *  
+ */
 function generateweeksList(arr){
     for (let i = 0; i < arr.length; i++){
 
@@ -59,7 +64,13 @@ function generateweeksList(arr){
 }
 
 
-// generate list  Items
+/**
+ * Generates the sublists of the menu
+ * 
+ * @param {array} arr a list contains objects holding the item's info (name, link, additional)
+ * @param {object} parent the parent tag (ul / ol) for list that will be generated
+ * 
+ */
 function generateMenuItems(arr, parent){
 
     for ( let i = 0; i < arr.length; i++){
@@ -179,11 +190,14 @@ generateMenuItems(statusList, statusPages);
 generateMenuItems(communitiesList, communities);
 
 
-// Open & Close the Menu
+// Opening & collapsing the Menu
 // ----------------------
 const menuBTN = document.querySelector('#menuBTN');
 const menu = document.querySelector('#menu');
 
+/**
+ * Opening & collapsing the Menu
+ */
 function toggleMenu() {
     menu.classList.toggle('open');
     menuBTN.classList.toggle('BTNopen');
