@@ -233,13 +233,15 @@ const toggleBTN = document.querySelectorAll('.toggleBTN');
 /**
  * Opening & collapsing the list 
  * Changing the list icon (+, -)
- * @param {object} unorderdList  list of targeted items 
+ * 
+ * @param {HTMLElement} btn  the button that toggles the list
  */
-function toggleList(el){
-    console.log(el)
-    el.firstElementChild.classList.toggle('fa-plus-square')
-    el.firstElementChild.classList.toggle('fa-minus-square')
-    el.nextElementSibling.classList.toggle('openList')
+function toggleList(btn){
+    // Changing the list icon (+, -)
+    btn.firstElementChild.classList.toggle('fa-plus-square')
+    btn.firstElementChild.classList.toggle('fa-minus-square')
+    // Opening & collapsing the list 
+    btn.nextElementSibling.classList.toggle('openList')
 }
 
 for (let i= 0; i < toggleBTN.length; i++){
