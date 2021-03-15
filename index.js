@@ -207,7 +207,7 @@ menuBTN.addEventListener('click', toggleMenu);
 
 /**
  * Adds a dot to the left of a list item
- * @param {NodeList} unorderdList  list of targeted items 
+ * @param {HTMLElement} unorderdList  list of targeted items 
  * @param {string} styleClass class name for the targeted items
  */
 function addDot(unorderdList, styleClass){
@@ -230,8 +230,13 @@ addDot(week_files, 'week_dots');
 // -----------------------------
 
 const toggleBTN = document.querySelectorAll('.toggleBTN');
-
+/**
+ * Opening & collapsing the list 
+ * Changing the list icon (+, -)
+ * @param {object} unorderdList  list of targeted items 
+ */
 function toggleList(el){
+    console.log(el)
     el.firstElementChild.classList.toggle('fa-plus-square')
     el.firstElementChild.classList.toggle('fa-minus-square')
     el.nextElementSibling.classList.toggle('openList')
